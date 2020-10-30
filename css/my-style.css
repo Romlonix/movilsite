@@ -11,8 +11,10 @@
   --fondo: #fff;
   --texto: #000;
 }
-nav{
-  background-color: var(--fondo) ;
+nav {
+  width: 100%;
+  background-color: var(--fondo);
+  position: absolute;
 }
 nav a {
   color: var(--texto);
@@ -24,21 +26,24 @@ nav i {
   cursor: pointer;
 }
 nav header {
-  /* background-color: red; */
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .1);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
 nav > div {
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .1);
+  z-index: 1;
+  width: 100%;
+  position: absolute;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
   display: flex;
   flex-direction: column;
   align-items: center;
+  user-select: none;
+  background-color: var(--fondo);
+  box-shadow: 0px 3px 4px 0px rgba(68, 30, 30, 0.1);
 }
 nav div a {
   padding: 20px;
@@ -51,15 +56,17 @@ nav div div i {
   width: 32px;
   text-align: center;
 }
-#nav-dropdown {
-  /* transition: 1s all; */
-  /* display: none; */
-}
-#navbar-toggler{
-  /* border: 1px solid var(--texto); */
-}
-.display-f {
+.visibility-v {
   visibility: visible;
   opacity: 1;
+}
+.b-shadow{
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, .1);
+}
+/* main ----------------------------- */
+main {
+  top: 72px;
+  margin: 20px;
+  position: absolute;
 }
 
