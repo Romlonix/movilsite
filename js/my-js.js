@@ -1,6 +1,5 @@
-document.getElementById("navbar-toggler").onclick = navbarToggler;
+document.getElementById("navbar-toggler").onclick = function () {
 
-function navbarToggler() {
   document.getElementById("nav-dropdown").classList.toggle("display-f");
 
   if (document.getElementById("navbar-toggler").classList.contains("fa-bars") == true) {
@@ -10,5 +9,5 @@ function navbarToggler() {
     document.getElementById("navbar-toggler").classList.remove("fa-times");
     document.getElementById("navbar-toggler").classList.add("fa-bars");
   }
-}
+};
 
