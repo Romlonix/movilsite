@@ -8,10 +8,10 @@
   /* outline: 1px solid lime; */
 }
 :root {
-  --fondo: #fff;
-  --texto: #000;
-  /* --fondo: #000;
-  --texto: #fff; */
+  /* --fondo: #fff;
+  --texto: #000; */
+  --fondo: #000;
+  --texto: #fff;
 }
 nav {
   width: 100%;
@@ -25,6 +25,10 @@ nav a {
 nav i {
   color: var(--texto);
   font-size: 2em !important;
+  width: 48px;
+  /* border: 1px solid #eee !important; */
+  padding: 5px !important;
+  text-align: center !important;
   cursor: pointer;
 }
 nav header {
@@ -45,7 +49,6 @@ nav > div {
   align-items: center;
   user-select: none;
   background-color: var(--fondo);
-  box-shadow: 0px 3px 4px 0px rgba(68, 30, 30, 0.1);
 }
 nav div a {
   padding: 20px;
@@ -62,13 +65,29 @@ nav div div i {
   visibility: visible;
   opacity: 1;
 }
-.b-shadow{
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, .1);
-}
+
 /* main ----------------------------- */
 main {
-  top: 72px;
+  top: 87px;
   margin: 20px;
   position: absolute;
+}
+@media only screen and (min-width: 575px) {
+  nav header{
+    height: 82px;
+    width: 20%;
+  }
+  #navbar-toggler {
+    display: none;
+  }
+  #nav-dropdown {
+    visibility: visible;
+    opacity: 1;
+    flex-direction: row;
+    width: 80%;
+    top: 0;
+    left: 20%;
+    justify-content: flex-end;
+  }
 }
 
