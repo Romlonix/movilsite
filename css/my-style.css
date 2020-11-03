@@ -5,13 +5,13 @@
   line-height: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  /* outline: 1px solid lime; */
+  outline: 1px solid lime;
 }
 :root {
-  /* --fondo: #fff;
-  --texto: #000; */
-  --fondo: #000;
-  --texto: #fff;
+  --fondo: #fff;
+  --texto: #000;
+  /* --fondo: #000;
+  --texto: #fff; */
 }
 nav {
   width: 100%;
@@ -25,7 +25,7 @@ nav a {
 nav i {
   color: var(--texto);
   font-size: 2em !important;
-  width: 48px;
+  width: 42px;
   /* border: 1px solid #eee !important; */
   padding: 5px !important;
   text-align: center !important;
@@ -58,7 +58,7 @@ nav div div {
   flex-direction: row;
 }
 nav div div i {
-  width: 32px;
+  width: 42px;
   text-align: center;
 }
 .visibility-v {
@@ -68,11 +68,11 @@ nav div div i {
 
 /* main ----------------------------- */
 main {
-  top: 87px;
+  top: 82px;
   margin: 20px;
   position: absolute;
 }
-@media only screen and (min-width: 575px) {
+@media only screen and (min-width: 715px) {
   nav header{
     height: 82px;
     width: 20%;
